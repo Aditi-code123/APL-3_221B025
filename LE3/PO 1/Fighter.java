@@ -5,13 +5,14 @@
 Write your code in this editor and press "Run" button to execute it.
 
 *******************************************************************************/
-
-public class Main {
-    public static void main(String[] args) {
-        Mother m = new Mother();
-        m.show(); 
-        Child ch = new Child();
-        ch.show(); 
+abstract class Fighter {
+    String name;
+    public Fighter(String name) {
+        this.name = name;
     }
+    public void fight() {
+        System.out.println(name + " is fighting...");
+    }
+    public abstract void obey();
+    public abstract void kind();
 }
-
